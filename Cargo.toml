@@ -1,6 +1,6 @@
 [package]
 name = "postcard"
-version = "1.0.8"
+version = "1.0.9"
 authors = ["James Munns <james@onevariable.com>"]
 edition = "2018"
 readme = "README.md"
@@ -69,7 +69,7 @@ default = ["heapless-cas"]
 
 use-std = ["serde/std", "alloc"]
 heapless-cas = ["heapless", "heapless/cas"]
-alloc = ["serde/alloc", "embedded-io/alloc"]
+alloc = ["serde/alloc", "embedded-io?/alloc"]
 use-defmt = ["defmt"]
 use-crc = ["crc", "paste"]
 
